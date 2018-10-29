@@ -31,7 +31,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.wicket.Page;
-import org.apache.wicket.RequestCycle;
+import org.apache.wicket.request.cycle.RequestCycle;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.mylyn.wikitext.confluence.core.ConfluenceLanguage;
@@ -62,10 +62,12 @@ import org.nibor.autolink.LinkType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.gitblit.Constants;
 import com.gitblit.IStoredSettings;
 import com.gitblit.Keys;
 import com.gitblit.models.PathModel;
 import com.gitblit.servlet.RawServlet;
+import com.gitblit.utils.GitBlitRequestUtils;
 import com.gitblit.utils.JGitUtils;
 import com.gitblit.utils.MarkdownUtils;
 import com.gitblit.utils.StringUtils;
@@ -277,7 +279,7 @@ public class MarkupProcessor {
 				if (imagePath.indexOf("://") == -1) {
 					// relative image
 					String path = doc.getRelativePath(imagePath);
-					String contextUrl = RequestCycle.get().getRequest().getRelativePathPrefixToContextRoot();
+					String contextUrl = GitBlitRequestUtils.getRelativePathPrefixToContextRoot();
 					url = RawServlet.asLink(contextUrl, repositoryName, commitId, path);
 				} else {
 					// absolute image
@@ -378,6 +380,47 @@ public class MarkupProcessor {
 
 //		final String content = MarkdownUtils.transformMarkdown(doc.markup, renderer);
 		final String content = MarkdownUtils.transformMarkdown(doc.markup, null);
+
+//			@Override
+//			public Rendering render(ExpImageNode node, String text) {
+//				if (node.url.indexOf("://") == -1) {
+//					// repository-relative image link
+//					String path = doc.getRelativePath(node.url);
+//					String contextUrl = GitBlitRequestUtils.getRelativePathPrefixToContextRoot();
+//					String url = RawServlet.asLink(contextUrl, repositoryName, commitId, path);
+//					return new Rendering(url, text);
+//				}
+//				// absolute image link
+//				return new Rendering(node.url, text);
+//			}
+//
+//			@Override
+//			public Rendering render(RefImageNode node, String url, String title, String alt) {
+//				Rendering rendering;
+//				if (url.indexOf("://") == -1) {
+//					// repository-relative image link
+//					String path = doc.getRelativePath(url);
+//					String contextUrl = GitBlitRequestUtils.getRelativePathPrefixToContextRoot();
+//					String wurl = RawServlet.asLink(contextUrl, repositoryName, commitId, path);
+//					rendering = new Rendering(wurl, alt);
+//				} else {
+//					// absolute image link
+//					rendering = new Rendering(url, alt);
+//				}
+//				return StringUtils.isEmpty(title) ? rendering : rendering.withAttribute("title", encode(title));
+//			}
+//
+//			@Override
+//			public Rendering render(WikiLinkNode node) {
+//				String path = doc.getRelativePath(node.getText());
+//				String name = getDocumentName(path);
+//				String url = getWicketUrl(DocPage.class, repositoryName, commitId, path);
+//				return new Rendering(url, name);
+//			}
+//		};
+
+//		final String content = MarkdownUtils.transformMarkdown(doc.markup, renderer);
+
 		final String safeContent = xssFilter.relaxed(content);
 
 		doc.html = safeContent;
@@ -387,7 +430,7 @@ public class MarkupProcessor {
 		String fsc = settings.getString(Keys.web.forwardSlashCharacter, "/");
 		String encodedPath = document.replace(' ', '-');
 		try {
-			encodedPath = URLEncoder.encode(encodedPath, "UTF-8");
+			encodedPath = URLEncoder.encode(encodedPath, Constants.ENCODING);
 		} catch (UnsupportedEncodingException e) {
 			logger.error(null, e);
 		}

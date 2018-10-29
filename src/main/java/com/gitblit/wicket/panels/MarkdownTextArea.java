@@ -38,25 +38,25 @@ public class MarkdownTextArea extends TextArea {
 	public MarkdownTextArea(String id, final IModel<String> previewModel, final Label previewLabel) {
 		super(id);
 		setModel(new PropertyModel(this, "text"));
-		add(new AjaxFormComponentUpdatingBehavior("onblur") {
+		add(new AjaxFormComponentUpdatingBehavior("blur") {
 			private static final long serialVersionUID = 1L;
 
 			@Override
 			protected void onUpdate(AjaxRequestTarget target) {
 				renderPreview(previewModel);
 				if (target != null) {
-					target.addComponent(previewLabel);
+					target.add(previewLabel);
 				}
 			}
 		});
-		add(new AjaxFormComponentUpdatingBehavior("onchange") {
+		add(new AjaxFormComponentUpdatingBehavior("change") {
 			private static final long serialVersionUID = 1L;
 
 			@Override
 			protected void onUpdate(AjaxRequestTarget target) {
 				renderPreview(previewModel);
 				if (target != null) {
-					target.addComponent(previewLabel);
+					target.add(previewLabel);
 				}
 			}
 		});
@@ -97,7 +97,7 @@ public class MarkdownTextArea extends TextArea {
 //		private static final long serialVersionUID = 1L;
 //
 //		public RichTextSetActiveTextFieldAttributeModifier(String markupId) {
-//			super("onClick", true, new Model("richTextSetActiveTextField('" + markupId + "');"));
+//			super("Click", true, new Model("richTextSetActiveTextField('" + markupId + "');"));
 //		}
 //	}
 

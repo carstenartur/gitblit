@@ -208,13 +208,13 @@ public class RegistrantPermissionsPanel extends BasePanel {
 				permissionChoice.setEnabled(entry.mutable);
 				permissionChoice.setOutputMarkupId(true);
 				if (entry.mutable) {
-					permissionChoice.add(new AjaxFormComponentUpdatingBehavior("onchange") {
+					permissionChoice.add(new AjaxFormComponentUpdatingBehavior("change") {
 
 						private static final long serialVersionUID = 1L;
 
 						@Override
 						protected void onUpdate(AjaxRequestTarget target) {
-							target.addComponent(permissionChoice);
+							target.add(permissionChoice);
 						}
 					});
 				}
@@ -254,9 +254,9 @@ public class RegistrantPermissionsPanel extends BasePanel {
 			private static final long serialVersionUID = 1L;
 
 			@Override
-			protected void onSubmit(AjaxRequestTarget target, Form<?> form) {
+			protected void onSubmit(AjaxRequestTarget target) {
 				// add permission to our list
-				RegistrantAccessPermission rp = (RegistrantAccessPermission) form.getModel().getObject();
+				RegistrantAccessPermission rp = (RegistrantAccessPermission) getForm().getModel().getObject();
 				if (rp.permission == null) {
 					return;
 				}
@@ -277,7 +277,7 @@ public class RegistrantPermissionsPanel extends BasePanel {
 				registrants.remove(rp.registrant);
 
 				// force the panel to refresh
-				target.addComponent(RegistrantPermissionsPanel.this);
+				target.add(RegistrantPermissionsPanel.this);
 			}
 		};
 		addPermissionForm.add(button);
@@ -312,6 +312,11 @@ public class RegistrantPermissionsPanel extends BasePanel {
 		public String getIdValue(AccessPermission type, int index) {
 			return Integer.toString(index);
 		}
+
+		@Override
+		public AccessPermission getObject(String id, IModel<? extends List<? extends AccessPermission>> choices) {
+			return choices.getObject().get(Integer.valueOf(id));
+		}
 	}
 
 	private class ShowStateButton extends AjaxButton {
@@ -337,9 +342,9 @@ public class RegistrantPermissionsPanel extends BasePanel {
 		}
 
 		@Override
-		protected void onSubmit(AjaxRequestTarget target, Form<?> form) {
+		protected void onSubmit(AjaxRequestTarget target) {
 			RegistrantPermissionsPanel.this.activeState = buttonState;
-			target.addComponent(RegistrantPermissionsPanel.this);
+			target.add(RegistrantPermissionsPanel.this);
 		}
 	};
 }
