@@ -23,7 +23,9 @@ import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.form.CheckBox;
 import org.apache.wicket.markup.html.form.DropDownChoice;
 import org.apache.wicket.model.IModel;
-import org.parboiled.common.StringUtils;
+
+import com.gitblit.utils.StringUtils;
+
 
 /**
  * A re-usable conditional choice option panel.

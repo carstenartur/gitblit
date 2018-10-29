@@ -17,9 +17,10 @@ package com.gitblit.tickets;
 
 import java.io.Serializable;
 
-import org.parboiled.common.StringUtils;
+
 
 import com.gitblit.models.UserModel;
+import com.gitblit.utils.StringUtils;
 
 /**
  * A ticket responsible.

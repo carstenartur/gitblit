@@ -18,7 +18,9 @@ package com.gitblit.wicket.panels;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.form.CheckBox;
 import org.apache.wicket.model.IModel;
-import org.parboiled.common.StringUtils;
+
+import com.gitblit.utils.StringUtils;
+
 
 /**
  * A re-usable checkbox option panel.

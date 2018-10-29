@@ -15,9 +15,9 @@
  */
 package com.gitblit.utils;
 
-import static org.pegdown.Extensions.ALL;
-import static org.pegdown.Extensions.ANCHORLINKS;
-import static org.pegdown.Extensions.SMARTYPANTS;
+//import static org.pegdown.Extensions.ALL;
+//import static org.pegdown.Extensions.ANCHORLINKS;
+//import static org.pegdown.Extensions.SMARTYPANTS;
 
 import java.io.IOException;
 import java.io.Reader;
@@ -25,15 +25,20 @@ import java.io.StringWriter;
 import java.text.MessageFormat;
 
 import org.apache.commons.io.IOUtils;
-import org.pegdown.LinkRenderer;
-import org.pegdown.ParsingTimeoutException;
-import org.pegdown.PegDownProcessor;
-import org.pegdown.ast.RootNode;
+//import org.pegdown.LinkRenderer;
+//import org.pegdown.ParsingTimeoutException;
+//import org.pegdown.PegDownProcessor;
+//import org.pegdown.ast.RootNode;
+import org.nibor.autolink.LinkRenderer;
 
 import com.gitblit.Constants;
 import com.gitblit.IStoredSettings;
 import com.gitblit.Keys;
-import com.gitblit.wicket.MarkupProcessor.WorkaroundHtmlSerializer;
+import com.vladsch.flexmark.ast.Node;
+import com.vladsch.flexmark.html.HtmlRenderer;
+import com.vladsch.flexmark.parser.Parser;
+import com.vladsch.flexmark.util.options.MutableDataSet;
+//import com.gitblit.wicket.MarkupProcessor.WorkaroundHtmlSerializer;
 
 /**
  * Utility methods for transforming raw markdown text to html.
@@ -77,13 +82,29 @@ public class MarkdownUtils {
 	 * @throws java.text.ParseException
 	 */
 	public static String transformMarkdown(String markdown, LinkRenderer linkRenderer) {
-		try {
-			PegDownProcessor pd = new PegDownProcessor(ALL & ~SMARTYPANTS & ~ANCHORLINKS);
-			RootNode astRoot = pd.parseMarkdown(markdown.toCharArray());
-			return new WorkaroundHtmlSerializer(linkRenderer == null ? new LinkRenderer() : linkRenderer).toHtml(astRoot);
-		} catch (ParsingTimeoutException e) {
-			return null;
-		}
+		 MutableDataSet options = new MutableDataSet();
+
+	        // uncomment to set optional extensions
+	        //options.set(Parser.EXTENSIONS, Arrays.asList(TablesExtension.create(), StrikethroughExtension.create()));
+
+	        // uncomment to convert soft-breaks to hard breaks
+	        //options.set(HtmlRenderer.SOFT_BREAK, "<br />\n");
+
+	        Parser parser = Parser.builder(options).build();
+	        HtmlRenderer renderer = HtmlRenderer.builder(options).build();
+
+	        // You can re-use parser and renderer instances
+	        Node document = parser.parse(markdown);
+	        String html = renderer.render(document);  // "<p>This is <em>Sparta</em></p>\n"
+		return html;
+//		try {
+//			PegDownProcessor pd = new PegDownProcessor(ALL & ~SMARTYPANTS & ~ANCHORLINKS);
+//			RootNode astRoot = pd.parseMarkdown(markdown.toCharArray());
+//			return new WorkaroundHtmlSerializer(linkRenderer == null ? new LinkRenderer() : linkRenderer).toHtml(astRoot);
+////			return new WorkaroundHtmlSerializer(linkRenderer == null ? new LinkRenderer() : linkRenderer).toHtml(astRoot);
+//		} catch (ParsingTimeoutException e) {
+//			return null;
+//		}
 	}
 
 	/**

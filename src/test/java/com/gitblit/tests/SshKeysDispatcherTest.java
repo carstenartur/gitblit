@@ -19,10 +19,11 @@ import java.security.KeyPair;
 import java.util.List;
 
 import org.junit.Test;
-import org.parboiled.common.StringUtils;
+
 
 import com.gitblit.Constants.AccessPermission;
 import com.gitblit.transport.ssh.SshKey;
+import com.gitblit.utils.StringUtils;
 
 /**
  * Tests the Keys Dispatcher and it's commands.

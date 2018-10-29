@@ -114,13 +114,24 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="javax.mail-1.5.1.jar">
+      <library name="javax.mail-1.6.1.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/javax.mail-1.5.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/javax.mail-1.6.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/javax.mail-1.5.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/src/javax.mail-1.6.1.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="activation-1.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/activation-1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/activation-1.1.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -147,112 +158,112 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="wicket-1.4.22.jar">
+      <library name="wicket-1.4.23.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/wicket-1.4.22.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/wicket-1.4.23.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/wicket-1.4.22.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/src/wicket-1.4.23.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="wicket-auth-roles-1.4.22.jar">
+      <library name="wicket-auth-roles-1.4.23.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/wicket-auth-roles-1.4.22.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/wicket-auth-roles-1.4.23.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/wicket-auth-roles-1.4.22.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/src/wicket-auth-roles-1.4.23.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="wicket-extensions-1.4.22.jar">
+      <library name="wicket-extensions-1.4.23.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/wicket-extensions-1.4.22.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/wicket-extensions-1.4.23.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/wicket-extensions-1.4.22.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/src/wicket-extensions-1.4.23.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="lucene-core-5.5.2.jar">
+      <library name="lucene-core-5.5.4.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/lucene-core-5.5.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/lucene-core-5.5.4.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/lucene-core-5.5.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/src/lucene-core-5.5.4.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="lucene-analyzers-common-5.5.2.jar">
+      <library name="lucene-analyzers-common-5.5.4.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/lucene-analyzers-common-5.5.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/lucene-analyzers-common-5.5.4.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/lucene-analyzers-common-5.5.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/src/lucene-analyzers-common-5.5.4.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="lucene-highlighter-5.5.2.jar">
+      <library name="lucene-highlighter-5.5.4.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/lucene-highlighter-5.5.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/lucene-highlighter-5.5.4.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/lucene-highlighter-5.5.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/src/lucene-highlighter-5.5.4.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="lucene-memory-5.5.2.jar">
+      <library name="lucene-memory-5.5.4.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/lucene-memory-5.5.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/lucene-memory-5.5.4.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/lucene-memory-5.5.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/src/lucene-memory-5.5.4.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="lucene-queries-5.5.2.jar">
+      <library name="lucene-queries-5.5.4.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/lucene-queries-5.5.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/lucene-queries-5.5.4.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/lucene-queries-5.5.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/src/lucene-queries-5.5.4.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="lucene-queryparser-5.5.2.jar">
+      <library name="lucene-queryparser-5.5.4.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/lucene-queryparser-5.5.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/lucene-queryparser-5.5.4.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/lucene-queryparser-5.5.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/src/lucene-queryparser-5.5.4.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="lucene-sandbox-5.5.2.jar">
+      <library name="lucene-sandbox-5.5.4.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/lucene-sandbox-5.5.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/lucene-sandbox-5.5.4.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/lucene-sandbox-5.5.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/src/lucene-sandbox-5.5.4.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -266,79 +277,594 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="pegdown-1.5.0.jar">
+      <library name="flexmark-all-0.34.48.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/pegdown-1.5.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/flexmark-all-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-0.34.48.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/pegdown-1.5.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-0.34.48.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="parboiled-java-1.1.7.jar">
+      <library name="flexmark-util-0.34.48.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/parboiled-java-1.1.7.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/flexmark-util-0.34.48.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/parboiled-java-1.1.7.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-util-0.34.48.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="parboiled-core-1.1.7.jar">
+      <library name="flexmark-ext-abbreviation-0.34.48.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/parboiled-core-1.1.7.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/flexmark-ext-abbreviation-0.34.48.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/parboiled-core-1.1.7.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-ext-abbreviation-0.34.48.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="asm-5.0.3.jar">
+      <library name="flexmark-ext-autolink-0.34.48.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/asm-5.0.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/flexmark-ext-autolink-0.34.48.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/asm-5.0.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-ext-autolink-0.34.48.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="asm-tree-5.0.3.jar">
+      <library name="autolink-0.9.0.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/asm-tree-5.0.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/autolink-0.9.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/asm-tree-5.0.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/src/autolink-0.9.0.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="asm-analysis-5.0.3.jar">
+      <library name="flexmark-formatter-0.34.48.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/asm-analysis-5.0.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/flexmark-formatter-0.34.48.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/asm-analysis-5.0.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-formatter-0.34.48.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="asm-util-5.0.3.jar">
+      <library name="flexmark-ext-typographic-0.34.48.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/asm-util-5.0.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/flexmark-ext-typographic-0.34.48.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/asm-util-5.0.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-ext-typographic-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-ext-ins-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-ext-ins-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-ext-ins-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-ext-gfm-strikethrough-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-ext-gfm-strikethrough-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-ext-gfm-strikethrough-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-ext-superscript-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-ext-superscript-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-ext-superscript-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-ext-admonition-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-ext-admonition-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-ext-admonition-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-ext-anchorlink-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-ext-anchorlink-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-ext-anchorlink-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-ext-aside-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-ext-aside-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-ext-aside-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-jira-converter-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-jira-converter-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-jira-converter-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-ext-tables-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-ext-tables-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-ext-tables-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-ext-wikilink-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-ext-wikilink-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-ext-wikilink-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-ext-attributes-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-ext-attributes-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-ext-attributes-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-ext-definition-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-ext-definition-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-ext-definition-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-ext-emoji-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-ext-emoji-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-ext-emoji-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-ext-enumerated-reference-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-ext-enumerated-reference-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-ext-enumerated-reference-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-ext-escaped-character-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-ext-escaped-character-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-ext-escaped-character-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-ext-footnotes-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-ext-footnotes-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-ext-footnotes-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-ext-gfm-issues-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-ext-gfm-issues-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-ext-gfm-issues-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-ext-gfm-tables-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-ext-gfm-tables-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-ext-gfm-tables-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-ext-gfm-tasklist-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-ext-gfm-tasklist-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-ext-gfm-tasklist-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-ext-gfm-users-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-ext-gfm-users-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-ext-gfm-users-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-ext-gitlab-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-ext-gitlab-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-ext-gitlab-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-ext-jekyll-front-matter-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-ext-jekyll-front-matter-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-ext-jekyll-front-matter-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-ext-yaml-front-matter-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-ext-yaml-front-matter-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-ext-yaml-front-matter-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-ext-jekyll-tag-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-ext-jekyll-tag-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-ext-jekyll-tag-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-ext-media-tags-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-ext-media-tags-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-ext-media-tags-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-test-util-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-test-util-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-test-util-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="junit-4.12.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/junit-4.12.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/junit-4.12.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hamcrest-core-1.3.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/hamcrest-core-1.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/hamcrest-core-1.3.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-ext-macros-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-ext-macros-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-ext-macros-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-ext-xwiki-macros-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-ext-xwiki-macros-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-ext-xwiki-macros-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-ext-toc-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-ext-toc-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-ext-toc-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-ext-youtube-embedded-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-ext-youtube-embedded-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-ext-youtube-embedded-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-html-parser-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-html-parser-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-html-parser-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jsoup-1.7.3.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/jsoup-1.7.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/jsoup-1.7.3.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-pdf-converter-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-pdf-converter-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-pdf-converter-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="openhtmltopdf-core-0.0.1-RC13.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/openhtmltopdf-core-0.0.1-RC13.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/openhtmltopdf-core-0.0.1-RC13.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="openhtmltopdf-pdfbox-0.0.1-RC13.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/openhtmltopdf-pdfbox-0.0.1-RC13.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/openhtmltopdf-pdfbox-0.0.1-RC13.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="pdfbox-2.0.8.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/pdfbox-2.0.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/pdfbox-2.0.8.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="fontbox-2.0.8.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/fontbox-2.0.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/fontbox-2.0.8.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-logging-1.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/commons-logging-1.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/commons-logging-1.2.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="xmpbox-2.0.8.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/xmpbox-2.0.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/xmpbox-2.0.8.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="graphics2d-0.12.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/graphics2d-0.12.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/graphics2d-0.12.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="openhtmltopdf-rtl-support-0.0.1-RC13.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/openhtmltopdf-rtl-support-0.0.1-RC13.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/openhtmltopdf-rtl-support-0.0.1-RC13.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="icu4j-59.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/icu4j-59.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/icu4j-59.1.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="openhtmltopdf-jsoup-dom-converter-0.0.1-RC13.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/openhtmltopdf-jsoup-dom-converter-0.0.1-RC13.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/openhtmltopdf-jsoup-dom-converter-0.0.1-RC13.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-profile-pegdown-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-profile-pegdown-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-profile-pegdown-0.34.48.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="flexmark-youtrack-converter-0.34.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/flexmark-youtrack-converter-0.34.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/flexmark-youtrack-converter-0.34.48.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -409,101 +935,90 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="org.eclipse.jgit-4.1.1.201511131810-r.jar">
+      <library name="org.eclipse.jgit-5.0.2.201807311906-r.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/org.eclipse.jgit-4.1.1.201511131810-r.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/org.eclipse.jgit-5.0.2.201807311906-r.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/org.eclipse.jgit-4.1.1.201511131810-r.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/src/org.eclipse.jgit-5.0.2.201807311906-r.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="jsch-0.1.53.jar">
+      <library name="jsch-0.1.54.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/jsch-0.1.53.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/jsch-0.1.54.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/jsch-0.1.53.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/src/jsch-0.1.54.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="JavaEWAH-0.7.9.jar">
+      <library name="jzlib-1.1.1.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/JavaEWAH-0.7.9.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/jzlib-1.1.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/JavaEWAH-0.7.9.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/src/jzlib-1.1.1.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="httpclient-4.3.6.jar">
+      <library name="JavaEWAH-1.1.6.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/httpclient-4.3.6.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/JavaEWAH-1.1.6.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/httpclient-4.3.6.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/src/JavaEWAH-1.1.6.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="httpcore-4.3.3.jar">
+      <library name="httpclient-4.5.2.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/httpcore-4.3.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/httpclient-4.5.2.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/httpcore-4.3.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/src/httpclient-4.5.2.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="commons-logging-1.1.3.jar">
+      <library name="httpcore-4.4.4.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/commons-logging-1.1.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/httpcore-4.4.4.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/commons-logging-1.1.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/src/httpcore-4.4.4.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="commons-codec-1.7.jar">
+      <library name="commons-codec-1.8.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/commons-codec-1.7.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/commons-codec-1.8.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/commons-codec-1.7.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/src/commons-codec-1.8.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="org.eclipse.jdt.annotation-1.1.0.jar">
+      <library name="org.eclipse.jgit.http.server-5.0.2.201807311906-r.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/org.eclipse.jdt.annotation-1.1.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/org.eclipse.jgit.http.server-5.0.2.201807311906-r.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/org.eclipse.jdt.annotation-1.1.0.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="org.eclipse.jgit.http.server-4.1.1.201511131810-r.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/org.eclipse.jgit.http.server-4.1.1.201511131810-r.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/org.eclipse.jgit.http.server-4.1.1.201511131810-r.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/src/org.eclipse.jgit.http.server-5.0.2.201807311906-r.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -638,35 +1153,35 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="commons-compress-1.4.1.jar">
+      <library name="commons-compress-1.8.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/commons-compress-1.4.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/commons-compress-1.8.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/commons-compress-1.4.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/src/commons-compress-1.8.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="xz-1.0.jar">
+      <library name="xz-1.5.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/xz-1.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/xz-1.5.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/xz-1.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/src/xz-1.5.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="commons-io-2.2.jar">
+      <library name="commons-io-2.5.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/commons-io-2.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/commons-io-2.5.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/commons-io-2.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/src/commons-io-2.5.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -810,39 +1325,6 @@
         <JAVADOC />
         <SOURCES>
           <root url="jar://$MODULE_DIR$/ext/src/tika-core-1.5.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="jsoup-1.7.3.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/jsoup-1.7.3.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/jsoup-1.7.3.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
-      <library name="junit-4.12.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/junit-4.12.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/junit-4.12.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
-      <library name="hamcrest-core-1.3.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/hamcrest-core-1.3.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/hamcrest-core-1.3.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>

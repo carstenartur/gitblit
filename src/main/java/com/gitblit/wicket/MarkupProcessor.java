@@ -15,7 +15,7 @@
  */
 package com.gitblit.wicket;
 
-import static org.pegdown.FastEncoder.encode;
+//import static org.pegdown.FastEncoder.encode;
 
 import java.io.Serializable;
 import java.io.StringWriter;
@@ -25,6 +25,7 @@ import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.EnumSet;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -42,14 +43,22 @@ import org.eclipse.mylyn.wikitext.mediawiki.core.MediaWikiLanguage;
 import org.eclipse.mylyn.wikitext.textile.core.TextileLanguage;
 import org.eclipse.mylyn.wikitext.tracwiki.core.TracWikiLanguage;
 import org.eclipse.mylyn.wikitext.twiki.core.TWikiLanguage;
-import org.pegdown.DefaultVerbatimSerializer;
-import org.pegdown.LinkRenderer;
-import org.pegdown.ToHtmlSerializer;
-import org.pegdown.VerbatimSerializer;
-import org.pegdown.ast.ExpImageNode;
-import org.pegdown.ast.RefImageNode;
-import org.pegdown.ast.WikiLinkNode;
-import org.pegdown.plugins.ToHtmlSerializerPlugin;
+import org.nibor.autolink.LinkExtractor;
+import org.nibor.autolink.LinkRenderer;
+import org.nibor.autolink.LinkSpan;
+import org.nibor.autolink.LinkType;
+//import org.nibor.autolink.LinkExtractor;
+//import org.nibor.autolink.LinkRenderer;
+//import org.nibor.autolink.LinkSpan;
+//import org.nibor.autolink.LinkType;
+//import org.pegdown.DefaultVerbatimSerializer;
+//import org.pegdown.LinkRenderer;
+//import org.pegdown.ToHtmlSerializer;
+//import org.pegdown.VerbatimSerializer;
+//import org.pegdown.ast.ExpImageNode;
+//import org.pegdown.ast.RefImageNode;
+//import org.pegdown.ast.WikiLinkNode;
+//import org.pegdown.plugins.ToHtmlSerializerPlugin;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -318,47 +327,57 @@ public class MarkupProcessor {
 	 * @param commitId
 	 */
 	private void parse(final MarkupDocument doc, final String repositoryName, final String commitId) {
-		LinkRenderer renderer = new LinkRenderer() {
+//		LinkExtractor linkExtractor = LinkExtractor.builder()
+//		        .linkTypes(EnumSet.of(LinkType.URL, LinkType.WWW, LinkType.EMAIL))
+//		        .build();
+//		Iterable<LinkSpan> links = linkExtractor.extractLinks(input);
+//		LinkSpan link = links.iterator().next();
+//		link.getType();        // LinkType.URL
+//		link.getBeginIndex();  // 17
+//		link.getEndIndex();    // 32
+//		input.substring(link.getBeginIndex(), link.getEndIndex());  // "http://test.com"
+//		LinkRenderer renderer = new LinkRenderer() {
+//
+//			@Override
+//			public Rendering render(ExpImageNode node, String text) {
+//				if (node.url.indexOf("://") == -1) {
+//					// repository-relative image link
+//					String path = doc.getRelativePath(node.url);
+//					String contextUrl = RequestCycle.get().getRequest().getRelativePathPrefixToContextRoot();
+//					String url = RawServlet.asLink(contextUrl, repositoryName, commitId, path);
+//					return new Rendering(url, text);
+//				}
+//				// absolute image link
+//				return new Rendering(node.url, text);
+//			}
+//
+//			@Override
+//			public Rendering render(RefImageNode node, String url, String title, String alt) {
+//				Rendering rendering;
+//				if (url.indexOf("://") == -1) {
+//					// repository-relative image link
+//					String path = doc.getRelativePath(url);
+//					String contextUrl = RequestCycle.get().getRequest().getRelativePathPrefixToContextRoot();
+//					String wurl = RawServlet.asLink(contextUrl, repositoryName, commitId, path);
+//					rendering = new Rendering(wurl, alt);
+//				} else {
+//					// absolute image link
+//					rendering = new Rendering(url, alt);
+//				}
+//				return StringUtils.isEmpty(title) ? rendering : rendering.withAttribute("title", encode(title));
+//			}
+//
+//			@Override
+//			public Rendering render(WikiLinkNode node) {
+//				String path = doc.getRelativePath(node.getText());
+//				String name = getDocumentName(path);
+//				String url = getWicketUrl(DocPage.class, repositoryName, commitId, path);
+//				return new Rendering(url, name);
+//			}
+//		};
 
-			@Override
-			public Rendering render(ExpImageNode node, String text) {
-				if (node.url.indexOf("://") == -1) {
-					// repository-relative image link
-					String path = doc.getRelativePath(node.url);
-					String contextUrl = RequestCycle.get().getRequest().getRelativePathPrefixToContextRoot();
-					String url = RawServlet.asLink(contextUrl, repositoryName, commitId, path);
-					return new Rendering(url, text);
-				}
-				// absolute image link
-				return new Rendering(node.url, text);
-			}
-
-			@Override
-			public Rendering render(RefImageNode node, String url, String title, String alt) {
-				Rendering rendering;
-				if (url.indexOf("://") == -1) {
-					// repository-relative image link
-					String path = doc.getRelativePath(url);
-					String contextUrl = RequestCycle.get().getRequest().getRelativePathPrefixToContextRoot();
-					String wurl = RawServlet.asLink(contextUrl, repositoryName, commitId, path);
-					rendering = new Rendering(wurl, alt);
-				} else {
-					// absolute image link
-					rendering = new Rendering(url, alt);
-				}
-				return StringUtils.isEmpty(title) ? rendering : rendering.withAttribute("title", encode(title));
-			}
-
-			@Override
-			public Rendering render(WikiLinkNode node) {
-				String path = doc.getRelativePath(node.getText());
-				String name = getDocumentName(path);
-				String url = getWicketUrl(DocPage.class, repositoryName, commitId, path);
-				return new Rendering(url, name);
-			}
-		};
-
-		final String content = MarkdownUtils.transformMarkdown(doc.markup, renderer);
+//		final String content = MarkdownUtils.transformMarkdown(doc.markup, renderer);
+		final String content = MarkdownUtils.transformMarkdown(doc.markup, null);
 		final String safeContent = xssFilter.relaxed(content);
 
 		doc.html = safeContent;
@@ -447,27 +466,27 @@ public class MarkupProcessor {
 	 * @author James Moger
 	 *
 	 */
-	public static class WorkaroundHtmlSerializer extends ToHtmlSerializer {
+//	public static class WorkaroundHtmlSerializer extends ToHtmlSerializer {
+//
+//		 public WorkaroundHtmlSerializer(final LinkRenderer linkRenderer) {
+//			 super(linkRenderer,
+//					 Collections.<String, VerbatimSerializer>singletonMap(VerbatimSerializer.DEFAULT, DefaultVerbatimSerializer.INSTANCE),
+//					 Collections.<ToHtmlSerializerPlugin>emptyList());
+//		    }
+//	    private void printAttribute(String name, String value) {
+//	        printer.print(' ').print(name).print('=').print('"').print(value).print('"');
+//	    }
 
-		 public WorkaroundHtmlSerializer(final LinkRenderer linkRenderer) {
-			 super(linkRenderer,
-					 Collections.<String, VerbatimSerializer>singletonMap(VerbatimSerializer.DEFAULT, DefaultVerbatimSerializer.INSTANCE),
-					 Collections.<ToHtmlSerializerPlugin>emptyList());
-		    }
-	    private void printAttribute(String name, String value) {
-	        printer.print(' ').print(name).print('=').print('"').print(value).print('"');
-	    }
-
-	    /* Reimplement print image tag to eliminate a trailing double-quote */
-		@Override
-	    protected void printImageTag(LinkRenderer.Rendering rendering) {
-	        printer.print("<img");
-	        printAttribute("src", rendering.href);
-	        printAttribute("alt", rendering.text);
-	        for (LinkRenderer.Attribute attr : rendering.attributes) {
-	            printAttribute(attr.name, attr.value);
-	        }
-	        printer.print("/>");
-	    }
-	}
+//	    /* Reimplement print image tag to eliminate a trailing double-quote */
+//		@Override
+//	    protected void printImageTag(LinkRenderer.Rendering rendering) {
+//	        printer.print("<img");
+//	        printAttribute("src", rendering.href);
+//	        printAttribute("alt", rendering.text);
+//	        for (LinkRenderer.Attribute attr : rendering.attributes) {
+//	            printAttribute(attr.name, attr.value);
+//	        }
+//	        printer.print("/>");
+//	    }
+//	}
 }

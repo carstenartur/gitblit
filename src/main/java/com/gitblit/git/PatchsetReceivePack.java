@@ -1271,7 +1271,7 @@ public class PatchsetReceivePack extends GitblitReceivePack {
 		String message = MessageFormat.format("Merged #{0,number,0} \"{1}\"", ticket.number, ticket.title);
 		Ref oldRef = null;
 		try {
-			oldRef = getRepository().getRef(ticket.mergeTo);
+			oldRef = getRepository().findRef(ticket.mergeTo);
 		} catch (IOException e) {
 			LOGGER.error("failed to get ref for " + ticket.mergeTo, e);
 		}

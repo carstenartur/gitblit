@@ -3,8 +3,10 @@ package com.gitblit.wicket;
 import org.apache.wicket.model.IModel;
 import org.apache.wicket.model.Model;
 import org.apache.wicket.util.lang.Objects;
-import org.parboiled.common.StringUtils;
+
 import org.slf4j.LoggerFactory;
+
+import com.gitblit.utils.StringUtils;
 
 public class SafeTextModel implements IModel<String> {
 

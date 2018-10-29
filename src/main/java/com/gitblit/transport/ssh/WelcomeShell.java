@@ -125,7 +125,7 @@ public class WelcomeShell implements Factory<Command> {
 			}
 
 			final String b1 = StringUtils.rightPad("", 72, '═');
-			final String b2 = StringUtils.rightPad("", 72, '─');
+			final String b2 = StringUtils.rightPad("", 72, '-');
 			final String nl = "\r\n";
 
 			StringBuilder msg = new StringBuilder();

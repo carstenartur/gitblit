@@ -21,7 +21,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-import org.parboiled.common.StringUtils;
+import com.gitblit.utils.StringUtils;
 
 import ro.fortsoft.pf4j.Version;
 

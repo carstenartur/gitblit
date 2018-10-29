@@ -184,7 +184,7 @@ public final class FlipTable {
 			}
 		}
 		return builder.toString();
-	}
+}
 
 	private void printDivider(StringBuilder out, String format) {
 		for (int column = 0; column < columns; column++) {

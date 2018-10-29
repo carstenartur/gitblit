@@ -226,7 +226,7 @@ public abstract class BaseCommand implements Command, SessionAware {
 			msg.write(b);
 			msg.write("\n\n");
 			msg.write("USAGE\n");
-			msg.write("─────\n");
+			msg.write("â”€â”€â”€â”€â”€\n");
 			msg.write(' ');
 			msg.write(commandName);
 			msg.write('\n');
@@ -239,14 +239,14 @@ public abstract class BaseCommand implements Command, SessionAware {
 				msg.write("\n\n");
 			}
 			msg.write("ARGUMENTS & OPTIONS\n");
-			msg.write("───────────────────\n");
+			msg.write("â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€\n");
 			clp.printUsage(msg, null);
 			msg.write('\n');
 			String examples = usage().trim();
 			if (!StringUtils.isEmpty(examples)) {
 				msg.write('\n');
 				msg.write("EXAMPLES\n");
-				msg.write("────────\n");
+				msg.write("â”€â”€â”€â”€â”€â”€â”€â”€\n");
 				msg.write(examples);
 				msg.write('\n');
 			}

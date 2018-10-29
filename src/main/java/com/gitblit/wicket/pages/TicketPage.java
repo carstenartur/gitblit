@@ -1684,7 +1684,7 @@ public class TicketPage extends RepositoryPage {
 				boolean success = true;
 				
 				try {
-					ref = r.getRef(refName);
+					ref = r.findRef(refName);
 					
 					if (ref != null) {
 						success = JGitUtils.deleteBranchRef(r, ref.getName());
