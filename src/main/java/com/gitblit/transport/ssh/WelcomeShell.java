@@ -24,10 +24,10 @@ import java.net.URL;
 import java.text.MessageFormat;
 
 import org.apache.sshd.common.Factory;
-import org.apache.sshd.server.Command;
 import org.apache.sshd.server.Environment;
 import org.apache.sshd.server.ExitCallback;
 import org.apache.sshd.server.SessionAware;
+import org.apache.sshd.server.command.Command;
 import org.apache.sshd.server.session.ServerSession;
 import org.eclipse.jgit.lib.Constants;
 import org.eclipse.jgit.util.SystemReader;

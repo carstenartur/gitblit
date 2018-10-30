@@ -277,6 +277,17 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="jetty-xml-9.3.23.v20180228.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/jetty-xml-9.3.23.v20180228.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/jetty-xml-9.3.23.v20180228.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="jetty-webapp-9.3.23.v20180228.jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/ext/jetty-webapp-9.3.23.v20180228.jar!/" />
@@ -1285,24 +1296,46 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="sshd-core-1.0.0.jar">
+      <library name="sshd-core-2.1.0.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/sshd-core-1.0.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/sshd-core-2.1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/sshd-core-1.0.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/src/sshd-core-2.1.0.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="mina-core-2.0.9.jar">
+      <library name="sshd-common-2.1.0.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/ext/mina-core-2.0.9.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/sshd-common-2.1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/ext/src/mina-core-2.0.9.jar!/" />
+          <root url="jar://$MODULE_DIR$/ext/src/sshd-common-2.1.0.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="sshd-mina-2.1.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/sshd-mina-2.1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/sshd-mina-2.1.0.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="mina-core-2.0.19.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/ext/mina-core-2.0.19.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/ext/src/mina-core-2.0.19.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
