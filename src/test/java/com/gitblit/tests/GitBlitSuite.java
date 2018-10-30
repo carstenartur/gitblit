@@ -119,6 +119,7 @@ public class GitBlitSuite {
 	private static Repository getRepository(String name) {
 		try {
 			File gitDir = FileKey.resolve(new File(REPOSITORIES, name), FS.DETECTED);
+			if(gitDir==null)gitDir=new File("data/git/helloworld.git");
 			Repository repository = new FileRepositoryBuilder().setGitDir(gitDir).build();
 			return repository;
 		} catch (Exception e) {
@@ -172,10 +173,10 @@ public class GitBlitSuite {
 		startGitblit();
 
 		if (REPOSITORIES.exists() || REPOSITORIES.mkdirs()) {
-			cloneOrFetch("helloworld.git", "https://github.com/git/hello-world.git");
+			cloneOrFetch("helloworld.git", "https://github.com/carstenartur/hello-world.git");
 			cloneOrFetch("ticgit.git", "https://github.com/schacon/ticgit.git");
 			cloneOrFetch("test/jgit.git", "https://github.com/eclipse/jgit.git");
-			cloneOrFetch("test/helloworld.git", "https://github.com/git/hello-world.git");
+			cloneOrFetch("test/helloworld.git", "https://github.com/carstenartur/hello-world.git");
 			cloneOrFetch("test/ambition.git", "https://github.com/defunkt/ambition.git");
 			cloneOrFetch("test/gitective.git", "https://github.com/kevinsawicki/gitective.git");
 
