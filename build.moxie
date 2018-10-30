@@ -104,12 +104,12 @@ repositories: central, eclipse-snapshots, eclipse, gitblit
 # Convenience properties for dependencies
 properties: {
   jetty.version  : 9.3.23.v20180228
-  slf4j.version  : 1.7.12
-  wicket.version : 8.0.0
+  slf4j.version  : 1.7.13
+  wicket.version : 8.1.0
   lucene.version : 5.5.4
   jgit.version   : 5.0.2.201807311906-r
   groovy.version : 2.4.4
-  bouncycastle.version : 1.52
+  bouncycastle.version : 1.57
   selenium.version : 2.28.0
   wikitext.version : 1.4
   sshd.version: 1.0.0
@@ -133,7 +133,7 @@ properties: {
 dependencies:
 - compile 'com.google.inject:guice:${guice.version}' :war :fedclient
 - compile 'com.google.inject.extensions:guice-servlet:${guice-servlet.version}' :war
-- compile 'com.google.guava:guava:18.0' :war :fedclient
+- compile 'com.google.guava:guava:23.1-jre' :war :fedclient
 - compile 'com.intellij:annotations:12.0' :war
 - compile 'log4j:log4j:1.2.17' :war :fedclient :manager
 - compile 'org.slf4j:slf4j-api:${slf4j.version}' :war :fedclient :manager
@@ -181,7 +181,7 @@ dependencies:
 - compile 'commons-io:commons-io:2.5' :war
 - compile 'com.force.api:force-partner-api:24.0.0' :war
 - compile 'org.freemarker:freemarker:2.3.22' :war
-- compile 'com.github.dblock.waffle:waffle-jna:1.7.3' :war
+- compile 'com.github.dblock.waffle:waffle-jna:1.7.4' :war
 - compile 'org.kohsuke:libpam4j:1.8' :war
 - compile 'args4j:args4j:2.0.29' :war :fedclient
 - compile 'commons-codec:commons-codec:1.8' :war
@@ -194,7 +194,7 @@ dependencies:
 - test 'org.seleniumhq.selenium:selenium-java:${selenium.version}' @jar
 - test 'org.seleniumhq.selenium:selenium-support:${selenium.version}' @jar
 - test 'org.seleniumhq.selenium:selenium-firefox-driver:${selenium.version}'
-- test 'org.mockito:mockito-core:1.10.19'
+- test 'org.mockito:mockito-core:2.18.0'
 # Dependencies with the "build" scope are retrieved
 # and injected into the Ant runtime classpath
-- build 'org.jacoco:org.jacoco.ant:0.7.8'
+- build 'org.jacoco:org.jacoco.ant:0.8.2'
