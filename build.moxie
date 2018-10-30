@@ -114,9 +114,9 @@ properties: {
   wikitext.version : 1.4
   sshd.version: 1.0.0
   mina.version: 2.0.9
-  guice.version : 4.0
+  guice.version : 4.2.1
   # Gitblit maintains a fork of guice-servlet
-  guice-servlet.version : 4.0-gb2
+  guice-servlet.version : 4.2.1
   }
 
 # Dependencies
@@ -147,6 +147,7 @@ dependencies:
 - compile 'org.eclipse.jetty:jetty-http:${jetty.version}' @jar
 - compile 'org.eclipse.jetty:jetty-io:${jetty.version}' @jar
 - compile 'org.eclipse.jetty:jetty-util:${jetty.version}' @jar
+- compile 'org.eclipse.jetty:jetty-xml:${jetty.version}' @jar
 - compile 'org.eclipse.jetty:jetty-webapp:${jetty.version}' @jar
 - compile 'org.apache.wicket:wicket-core:${wicket.version}' :war !org.mockito
 - compile 'org.apache.wicket:wicket-auth-roles:${wicket.version}' :war !org.mockito
